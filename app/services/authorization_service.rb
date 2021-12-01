@@ -16,8 +16,6 @@ class AuthorizationService
   end
 
   def verify_token
-    p JsonWebToken.verify(http_token)
-    p '=============='
     JsonWebToken.verify(http_token)
   end
 end
