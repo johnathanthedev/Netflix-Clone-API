@@ -10,9 +10,9 @@ class JsonWebToken
     JWT.decode(token, nil,
                true, # Verify the signature of this token
                algorithm: 'RS256',
-               iss: "#{ENV["AUTH0_API_NETFLIX_CLONE_IDENTIFIER"]}/",
+              #  iss: "#{ENV["AUTH0_API_NETFLIX_CLONE_IDENTIFIER"]}/",
                verify_iss: true,
-              #  aud: ENV["AUTH0_API_NETFLIX_CLONE_IDENTIFIER"],
+               aud: ENV["AUTH0_API_NETFLIX_CLONE_IDENTIFIER"],
                verify_aud: true) do |header|
       jwks_hash[header['kid']]
     end
