@@ -26,6 +26,6 @@ class UserFavoriteMoviesController < SecuredController
   private
 
   def user_favorite_movie_params
-    params.permit(:title, :overview, :tmdb_id, :user_favorite_movie_id, :genre_ids => [], :movie_poster_urls => [], :trailer_urls => [])
+    params.permit(:title, :overview, :tmdb_id, :auth0_user_id, :genre_ids => [], :movie_poster_urls => [], :trailer_urls => [])
   end  
 end
