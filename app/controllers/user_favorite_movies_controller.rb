@@ -1,5 +1,5 @@
 class UserFavoriteMoviesController < SecuredController
-  skip_before_action :authorize_request, only: [:index, :show]
+  skip_before_action :authorize_request, only: [:show]
   def index
     user_favorite_movies = UserFavoriteMovie.all
     render json: user_favorite_movies
