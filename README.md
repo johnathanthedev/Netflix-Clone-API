@@ -1,24 +1,23 @@
-# README
+# Netflix Clone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a clone of one of the most famous online streaming services - Netflix.
 
-Things you may want to cover:
+## Tech used
 
-* Ruby version
+For the frontend, the following is used:
+_Github Repo_: https://github.com/johnathanthedev/Netflix-Clone-RT
 
-* System dependencies
+- React
+- TypeScript
+- Bootstrap
+- Auth0 (for auth)
 
-* Configuration
+And for the backend:
+_Github Repo_: https://github.com/johnathanthedev/Netflix-Clone-API
 
-* Database creation
+- Ruby on Rails
+- Auth0
 
-* Database initialization
+## Future features
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Transition to AWS S3 for data storage
